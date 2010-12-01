@@ -1,0 +1,16 @@
+Version 0.92
+===================
++ Changed requestReady() signal to contain the raw network service response
+  as sent from the service. 
+   * New signature: requestReady(QByteArray) 
+
+Version 0.91
+===================
++ Added support for HTTP GET requests
+- Removed method setRequestBody()
+   * Both GET and POST methods shall use the same method for specifying service 
+     specific variables: setAdditionalParameters(KQOAuthParameters);
+
+Version 0.9
+===================
+Initial release

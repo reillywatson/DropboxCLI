@@ -1,5 +1,9 @@
 DropboxCLI is a command-line tool for interfacing with Dropbox.
 
+Building it requires Qt, particularly QtCore, QtNetwork and QCrypto.
+
+OAuth support comes courtesy of KQOAuth, whose source is included.
+
 Usage: DropboxCLI -[ald] <path>
     -a <email> <password>               Authenticate.  This only needs to be done once, or when changing users.  The token is stored on disk in local settings (on Linux, ~/Settings)
     -l <path>                  Get metadata info at <path> (returns JSON object, see the Dropbox API documentation for a schema)
